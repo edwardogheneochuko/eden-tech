@@ -37,8 +37,7 @@ const Footer = () => {
           <p className="text-sm underline">edencloudwavetechnology@gmail.com</p>
 
           <h1 className='font-semibold sm:mt-20 mb-3'>Address</h1>
-          <p className='text-sm underline'>Number 3 Dhaka Street, Beachwood Park Estate, LakoweGold Road,
-            Ibeju-Lekki, Lagos State
+          <p className='text-sm underline'>6B Abiodun Cl. Opebi Ikeja, Lagos Nigeria
           </p>
         </div>
 
