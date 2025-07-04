@@ -1,32 +1,32 @@
-import React from 'react'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import { Navigation, Pagination, Autoplay } from 'swiper/modules'
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
+import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 // Import your staff data
-import staff from '../../data/staffs'
+import staff from '../../data/staffs';
 
 const Meet = () => {
   return (
-    <div className='bg-neutral-900 min-h-dvh py-10'>
-      <div className='grid md:grid-cols-[2fr_3fr] text-white px-10 gap-2 space-y-3'>
-        <h1 className='text-4xl md:text-5xl md:leading-tight font-bold'>
-          Meet our team of industry expert
+    <div className="bg-neutral-900 min-h-dvh py-10">
+      <div className="grid md:grid-cols-[2fr_3fr] text-white px-10 gap-2 space-y-3">
+        <h1 className="text-4xl md:text-5xl md:leading-tight font-bold">
+          Meet our team of industry experts
         </h1>
-        <p className='md:mt-20'>
-          With a proven track record in cloud computing, our management team brings together a wealth of experiences in technology, business strategy,
-          and innovation to drive our company's success
+        <p className="md:mt-20">
+          With a proven track record in cloud computing, our management team brings together a wealth of experiences in technology,
+          business strategy, and innovation to drive our company's success.
         </p>
       </div>
 
-      <div className='px-10 mt-10'>
+      <div className="px-10 mt-10">
         <Swiper
           modules={[Pagination, Navigation, Autoplay]}
           pagination={{ clickable: true }}
           navigation
-          autoplay={{ delay: 3000, disableOnInteraction: false }} // 3 seconds delay
+          autoplay={{ delay: 3000, disableOnInteraction: false }}
           spaceBetween={30}
           slidesPerView={1}
           breakpoints={{
@@ -53,7 +53,7 @@ const Meet = () => {
         </Swiper>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Meet
+export default Meet;
