@@ -35,7 +35,7 @@ const Question = () => {
       <div className="relative z-10 flex flex-col items-center justify-center text-white px-4 md:px-0 py-16">
         {/* Title section */}
         <div className="text-center space-y-4 md:space-y-3 ">
-          <h1 className="text-sm md:text-lg">What i do?</h1>
+          <h1 className="text-lg md:text-xl">What i do?</h1>
           <h2 className="text-2xl md:text-3xl font-semibold text-balance">Provide next gen. solution</h2>
           <p className="text-sm ">
             Whether you're a top-tier company or just starting out, we'll help you challenge

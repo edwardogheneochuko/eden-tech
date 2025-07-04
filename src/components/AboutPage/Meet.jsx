@@ -35,7 +35,7 @@ const Meet = () => {
           }}
         >
           {staff.map(member => (
-            <SwiperSlide key={member.name}>
+            <SwiperSlide key={member.id}>
               <div className="bg-white/10 p-8 rounded-2xl text-center space-y-4 backdrop-blur-md shadow-lg">
                 {member.image && (
                   <img
