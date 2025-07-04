@@ -2,7 +2,8 @@ import daysun from '../assets/staffs/Daysun.jpeg';
 import Edward from '../assets/staffs/Edward.jpeg';
 import Edwin from '../assets/staffs/Edwin.jpeg';
 import Olaseni from '../assets/staffs/Olaseni.jpeg';
-import Zoey from '../assets/staffs/Zoey.jpeg';
+import Zoey from '../assets/staffs/zoey.jpeg';
+
 
 const staff = [
   {
