@@ -4,6 +4,7 @@ import { CgClose } from 'react-icons/cg'
 import { Link } from 'react-router'
 import { motion, AnimatePresence } from 'framer-motion'
 import Button from '../shared/Button'
+import inshot from '../../public/Images/inshot.png'
 
 const Navbar = () => {
   const navStyles = 'hover:text-amber-300 duration-300 text-sm md:text-base text-white'
@@ -43,8 +44,8 @@ const Navbar = () => {
         </div>
         <div>
           <img
-            src="https://cdn.builder.io/api/v1/image/assets/TEMP/db7e63623b88797149f5d55ab0ef70dfe95afeaf?placeholderIfAbsent=true&apiKey=c1e72e36ef9a4890bcbdc80785b4d488"
-            className="h-10 mr-2"
+            src={inshot}
+            className="h-12 mr-2"
             alt="Eden Cloudwave Logo"
           />
         </div>
