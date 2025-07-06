@@ -8,8 +8,8 @@ import { BsArrowLeft } from 'react-icons/bs';
 
 const FirstSec = () => {
   const stats = [
-    { value: '17+', label: 'satisfied clients' },
-    { value: '17+', label: 'completed projects' },
+    { value: '17+', label: 'Satisfied Clients' },
+    { value: '17+', label: 'Completed Projects' },
     { value: '1+', label: 'Years In Business' }
   ]
 
@@ -19,7 +19,7 @@ const FirstSec = () => {
       <div className='z-10 space-y-4'>
       <Link to="/fevai" className=' text-sm md:text-base hover:text-amber-400 
       duration-300 flex items-center'> 
-        Best financial AI Therapist <BsArrowLeft className='ml-2 text-3xl' />
+        <span className='text-yellow-400'Best financial AI Therapist</span> <BsArrowLeft className='ml-2 text-3xl' />
       </Link>
       <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold leading-tight '>
         Driving <span className='text-yellow-400'>creative innovation</span>
