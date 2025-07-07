@@ -7,7 +7,7 @@ import About from './pages/About'
 import Footer from './components/Footer'
 import Contact from './pages/Contact'
 import Fevai from './components/Fevai'
-
+import BotpressWebchat from './components/BotpressWebchat'
 
 const App = () => {
   return (
@@ -19,6 +19,7 @@ const App = () => {
         <Route path='/contact' element={<Contact />} />
         <Route path='/fevai' element={<Fevai />} />
       </Routes>
+      <BotpressWebchat />
       <Footer />
     </div>
   )
