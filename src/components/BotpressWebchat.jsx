@@ -1,8 +1,6 @@
-
-const BUTTON_COLOUR = "#F59E0B"
-const BOT_NAME = "Fevai"
-
 const BotpressWebchat = () => {
+  const BUTTON_COLOUR = "#F59E0B"
+  const BOT_NAME = "Fevai"
 
   const iframeSrcDoc = `
     <!doctype html>
@@ -16,6 +14,7 @@ const BotpressWebchat = () => {
             "botId": "9ed1a1da-9c2c-4eda-bd2e-54be08296b82",
             "configuration": {
               "version": "v1",
+              "botAvatar": "https://files.bpcontent.cloud/2025/07/07/22/20250707220205-166U120B.png",
               "website": {},
               "email": {},
               "phone": {},
