@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Button from '../shared/Button'
+import BotpressWebchat from './BotpressWebchat'
 
 const Fevai = () => {
   return (
