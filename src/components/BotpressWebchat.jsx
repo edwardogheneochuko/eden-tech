@@ -1,6 +1,8 @@
 
+const BUTTON_COLOUR = "#F59E0B"
+const BOT_NAME = "Fevai"
+
 const BotpressWebchat = () => {
-  const BUTTON_COLOUR = "#F59E0B"
 
   const iframeSrcDoc = `
     <!doctype html>
@@ -26,6 +28,7 @@ const BotpressWebchat = () => {
               "fontFamily": "inter",
               "radius": 4,
               "feedbackEnabled": true,
+              "botName": "${BOT_NAME}",
               "footer": "[âš¡ by Botpress](https://botpress.com/?from=webchat)",
               "allowFileUpload": true
             },
