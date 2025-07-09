@@ -1,7 +1,7 @@
 const BotpressWebchat = () => {
   const BUTTON_COLOUR = "#F59E0B"
   const BOT_NAME = "Fevai"
-  const BOT_AVATAR_URL = "/inshot.png"
+  const BOT_AVATAR_URL = "/inshot.png"  // ⚠ Note: should ideally be absolute URL as explained earlier
 
   const iframeSrcDoc = `
     <!doctype html>
@@ -45,7 +45,7 @@ const BotpressWebchat = () => {
         h-[500px] w-[400px]
         z-[1000]
         shadow-lg rounded-lg overflow-hidden
-      " >
+      ">
       <iframe
         className="h-full w-full border-none"
         srcDoc={iframeSrcDoc}
