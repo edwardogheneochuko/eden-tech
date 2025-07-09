@@ -8,12 +8,12 @@ const BotpressWebchat = () => {
     <html lang="en">
       <head></head>
       <body>
-        <script src="https://cdn.botpress.cloud/webchat/v3.0/inject.js"></script>
+        <script src="https://cdn.botpress.cloud/webchat/v3.1/inject.js" defer></script>
+        <script src="https://files.bpcontent.cloud/2025/07/09/21/20250709210603-U1GL57H5.js" defer></script>
         <script defer>
-          // Paste your Webchat config snippet here
           window.botpress.init({
             "botId": "9ed1a1da-9c2c-4eda-bd2e-54be08296b82",
-            "configuration": {
+            "configuration": { 
               "version": "v1",
               "botAvatar": "${BOT_AVATAR_URL}",
               "website": {},
@@ -29,7 +29,7 @@ const BotpressWebchat = () => {
               "radius": 4,
               "feedbackEnabled": true,
               "botName": "${BOT_NAME}",
-              "footer": "[âš¡ by Botpress](https://botpress.com/?from=webchat)",
+              "footer": "[⚡ by Botpress](https://botpress.com/?from=webchat)",
               "allowFileUpload": true
             },
             "clientId": "${import.meta.env.VITE_WEBCHAT_CLIENT_ID}"
@@ -49,8 +49,8 @@ const BotpressWebchat = () => {
       <iframe
         className="h-full w-full border-none"
         srcDoc={iframeSrcDoc}
-        title="Botpress Webchat"
-      ></iframe>
+        title="Botpress Webchat">
+      </iframe>
     </div>
   );
 };

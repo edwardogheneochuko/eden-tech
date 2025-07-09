@@ -7,7 +7,7 @@ import Button from '../shared/Button'
 import inshot from '../../public/Images/inshot.png'
 
 const Navbar = () => {
-  const navStyles = 'hover:text-amber-300 duration-300 text-sm md:text-base text-white'
+  const navStyles = 'hover:text-amber-300 duration-300  text-sm md:text-base text-white'
   const [isOpen, setIsOpen] = useState(false)
   const menuRef = useRef(null)
 
@@ -74,7 +74,7 @@ const Navbar = () => {
               gap-y-5 p-5 z-50'
           >
             <Link to="/" className={`${navStyles} border-b pb-3`}>Home</Link>
-            <Link to="/about" className={`${navStyles} border-b pb-3`}>About</Link>
+            <Link to="/about" className={`${navStyles} border-b pb-3 `}>About</Link>
             <Link to="/contact" className={`${navStyles} border-b pb-3`}>Contact</Link>
           </motion.div>
         )}

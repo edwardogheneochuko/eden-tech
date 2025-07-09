@@ -56,7 +56,7 @@ const Footer = () => {
               rounded-md text-white focus:outline-none text-sm"
             />
             <span className='max-w-2xl'>
-            <Button title="Subscribe" />
+            <Button title="Subscribe"  />
             </span>
           </form>
           <p className="text-sm">
