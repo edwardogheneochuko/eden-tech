@@ -41,17 +41,18 @@ const BotpressWebchat = () => {
 
   return (
     <div className="
-        fixed bottom-5 right-5
-        h-[500px] w-[400px]
-        z-[1000]
-        shadow-lg rounded-lg overflow-hidden
-      ">
-      <iframe
-        className="h-full w-full border-none"
-        srcDoc={iframeSrcDoc}
-        title="Botpress Webchat">
-      </iframe>
-    </div>
+  fixed bottom-4 right-4
+  h-[400px] w-[90%] max-w-[400px] sm:h-[450px] sm:w-[350px] md:h-[500px] md:w-[400px]
+  z-[1000]
+  shadow-lg rounded-lg overflow-hidden
+">
+  <iframe
+    className="h-full w-full border-none"
+    srcDoc={iframeSrcDoc}
+    title="Botpress Webchat">
+  </iframe>
+ </div>
+
   );
 };
 
