@@ -32,7 +32,7 @@ const FirstSec = () => {
       the power of artificial intelligence to revolutionize business operations.
       </div>
       <div className='ml-5 sm:ml-18 md:ml-22'>
-        <Button title='Get in Touch' onClick={() => window.location.href = '/contact'} />
+        <Button title='Get in Touch' to= '/contact'} />
       </div>
       <div>
         {/* Stats box */}
