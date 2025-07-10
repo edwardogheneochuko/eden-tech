@@ -5,7 +5,7 @@ import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { FiExternalLink } from 'react-icons/fi'
 import { Link } from 'react-router';
 import { BsArrowLeft } from 'react-icons/bs';
-import Contact from './pages/Contact';
+
 
 const FirstSec = () => {
   const stats = [
@@ -32,7 +32,7 @@ const FirstSec = () => {
       the power of artificial intelligence to revolutionize business operations.
       </div>
       <div className='ml-5 sm:ml-18 md:ml-22'>
-        <Button title='Get in Touch' onClick={() => window.location.href = <Contact />} />
+        <Button title='Get in Touch' onClick={() => window.location.href = '/contact'} />
       </div>
       <div>
         {/* Stats box */}
