@@ -49,16 +49,22 @@ const Footer = () => {
             Be the first to get the latest news, updates, and offers we’re bringing to the market.
           </p>
           <form className="flex flex-col gap-y-2">
-            <input
-              type="email"
-              placeholder="Enter Email Address"
-              className="flex-1 py-3 px-3  border border-gray-50
-              rounded-md text-white focus:outline-none text-sm"
-            />
-            <span className='max-w-2xl'>
-            <Button title="Subscribe"  />
-            </span>
-          </form>
+  <input
+    type="email"
+    placeholder="Enter Email Address"
+    className="flex-1 py-3 px-3 border border-gray-50
+    rounded-md text-white focus:outline-none text-sm"
+  />
+  <span className='max-w-2xl'>
+    <a 
+      href="mailto:edencloudwavetechnology@gmail.com" 
+      className="inline-block"
+    >
+      <Button title="Subscribe" />
+    </a>
+  </span>
+</form>
+
           <p className="text-sm">
             By subscribing, you agree to our Privacy Policy and consent to 
             receive updates.
