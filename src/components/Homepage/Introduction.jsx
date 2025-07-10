@@ -45,9 +45,9 @@ const FirstSec = () => {
           </p>
         </div>
 
-        <div>
+        <Link to="/contact" >
           <Button title="Get in Touch" to="/contact" />
-        </div>
+        </Link>
       </div>
 
       {/* Stats box */}
