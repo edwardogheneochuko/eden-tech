@@ -5,6 +5,7 @@ import { MdOutlineArrowRightAlt } from "react-icons/md";
 import { FiExternalLink } from 'react-icons/fi'
 import { Link } from 'react-router';
 import { BsArrowLeft } from 'react-icons/bs';
+import Contact from './pages/Contact';
 
 const FirstSec = () => {
   const stats = [
