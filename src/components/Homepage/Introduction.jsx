@@ -1,61 +1,66 @@
-import React from 'react'
-import landingpage from '../../../public/Images/LandingPage1.png'
-import Button from '../../shared/Button'
+import React from 'react';
+import landingpage from '../../../public/Images/LandingPage1.png';
+import Button from '../../shared/Button';
 import { MdOutlineArrowRightAlt } from "react-icons/md";
-import { FiExternalLink } from 'react-icons/fi'
-import { Link } from 'react-router';
 import { BsArrowLeft } from 'react-icons/bs';
+import { Link } from 'react-router'
 
-
-const FirstSec = () => {
+const FirstSec = () => { 
   const stats = [
     { value: '17+', label: 'Satisfied Clients' },
     { value: '17+', label: 'Completed Projects' },
     { value: '1+', label: 'Years In Business' }
-  ]
+  ];
 
   return (
-    <div className="relative flex flex-col justify-center items-start text-left  text-white px-10 py-16 md:pb-40">
+    <div className="relative flex flex-col justify-center items-start text-left text-white px-6 py-16 md:pb-40">
+      
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover bg-center z-0"
+        style={{ backgroundImage: `url(${landingpage})` }}
+      ></div>
+
       {/* Content */}
-      <div className='z-10 space-y-4'>
-      <Link to="/fevai" className=' text-sm md:text-base hover:text-amber-400 
-      duration-300 flex items-center'> 
-        <span className='text-yellow-400'>TALK TO FEVAI</span> <BsArrowLeft className='ml-2 text-3xl' />
-      </Link>
-      <h1 className='text-4xl md:text-5xl lg:text-6xl font-bold leading-tight '>
-        Driving <span className='text-yellow-400'>creative innovation</span>
-        <br />
-        through AI-driven <br /> solution
-      </h1>
-      <div className='mb-8 max-w-2xl text-gray-300 flex sm:ml-10 '>
-      <MdOutlineArrowRightAlt className='mr-2 text-6xl -mt-4'/> We're a leading-edge cloud computing company focused on harnessing
-      the power of artificial intelligence to revolutionize business operations.
+      <div className="relative z-10 space-y-6 max-w-3xl">
+        <Link
+          to="/fevai"
+          className="text-sm md:text-base hover:text-amber-400 duration-300 flex items-center"
+        >
+          <span className="text-yellow-400">TALK TO FEVAI</span>
+          <BsArrowLeft className="ml-2 text-2xl md:text-3xl" />
+        </Link>
+
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+          Driving <span className="text-yellow-400">creative innovation</span>
+          <br />
+          through AI-driven <br /> solutions
+        </h1>
+
+        <div className="flex items-start text-gray-300 max-w-2xl">
+          <MdOutlineArrowRightAlt className="mr-3 text-5xl md:text-6xl -mt-2" />
+          <p>
+            We're a leading-edge cloud computing company focused on harnessing
+            the power of artificial intelligence to revolutionize business operations.
+          </p>
+        </div>
+
+        <div>
+          <Button title="Get in Touch" to="/contact" />
+        </div>
       </div>
-      <div className='ml-5 sm:ml-18 md:ml-22'>
-        <Button title='Get in Touch' to= '/contact' />
-      </div>
-      <div>
-        {/* Stats box */}
-        <div className="flex justify-center gap-x-8 
-           py-3 rounded-md  md:px-5 md:py-10 md:absolute md:right-10 bottom-6
-           shadow-2xl mt-10 px-4">
-            {stats.map((item, index) => (
-              <div key={index} >
-                <h1 className="text-3xl font-semibold">{item.value}</h1>
-                <h2 className="text-sm">{item.label}</h2>
-              </div>
-            ))}
+
+      {/* Stats box */}
+      <div className="relative mt-10 md:absolute md:right-10 bottom-6 shadow-2xl rounded-md px-4 py-3 md:px-6 md:py-6 bg-black/70 backdrop-blur-sm flex justify-center gap-x-8">
+        {stats.map((item, index) => (
+          <div key={index} className="text-center">
+            <h1 className="text-3xl font-semibold">{item.value}</h1>
+            <h2 className="text-sm">{item.label}</h2>
           </div>
+        ))}
       </div>
-      </div>
-       {/* Background image */}
-       <div
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${landingpage})` }}></div>
     </div>
-  )
-}
+  );
+};
 
-export default FirstSec
-
-// <MdOutlineArrowRightAlt className='text-9xl ' />
+export default FirstSec;

@@ -3,6 +3,7 @@
 import React from 'react'
 import landingpage from '../../../public/Images/LandingPage3.png'
 import Button from '../../shared/Button'
+import { Link } from 'react-router'
 
 const Transform = () => {
   return (
@@ -18,7 +19,7 @@ const Transform = () => {
                     Let's Transform your Idea into
                 A Creative Innovation
                 </h1>
-                <Button title="Get In Touch" />
+                <Link to='/contact'><Button title="Get In Touch" /></Link>
           </div>
     </div>
   )
