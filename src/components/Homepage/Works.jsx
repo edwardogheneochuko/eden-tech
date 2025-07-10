@@ -2,6 +2,7 @@
 
 import React from 'react'
 import Button from '../../shared/Button'
+import { Link } from 'react-router'
 
 const Works = () => {
   return (
@@ -20,7 +21,8 @@ const Works = () => {
                 streamline processes, enhance efficiency, and drive substantial 
                 growth for organizations of all sizes.
             </h3>
-            <Button title='About Us' />
+            <Link to='/aboutus'><Button title='About Us' />
+            </Link>
            </div>
       </div>
     </div>
